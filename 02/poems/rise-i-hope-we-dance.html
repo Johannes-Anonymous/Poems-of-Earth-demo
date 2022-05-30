@@ -6,6 +6,10 @@
     <title>Poems of Earth | Rise (I Hope We Dance)</title>
     <link href="../common.css" rel="stylesheet">
     <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
         #home-link {
             margin-top: 0.5rem;
         }
@@ -49,16 +53,22 @@
             width: 2.5rem;
             opacity: 0.1;
         }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="reading">
         <div id="home-link">
-            <a class="text-subtle" href="../home.html#content-anchor">Home</a>
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
         </div>
         <main>
-            <h2 id="title" class="font-sans-serif text-secondary">Rise (I Hope We Dance)</h1>
-            <pre id="content">We stepped from hope
+            <h2 id="title" class="font-sans-serif text-secondary fade-in">Rise (I Hope We Dance)</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">We stepped from hope
     into dance
     when we wed.
 I remember how
@@ -140,7 +150,7 @@ and again
 </pre>
         </main>
     </div>
-    <div id="top-link-container">
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
         <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
     </div>
 </body>

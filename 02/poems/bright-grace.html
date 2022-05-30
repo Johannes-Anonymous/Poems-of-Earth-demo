@@ -6,6 +6,10 @@
     <title>Poems of Earth | Bright Grace</title>
     <link href="../common.css" rel="stylesheet">
     <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
         #home-link {
             margin-top: 0.5rem;
         }
@@ -49,16 +53,22 @@
             width: 2.5rem;
             opacity: 0.1;
         }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="reading">
         <div id="home-link">
-            <a class="text-subtle" href="../home.html#content-anchor">Home</a>
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
         </div>
         <main>
-            <h2 id="title" class="font-sans-serif text-secondary">Bright Grace</h1>
-            <pre id="content">Growing older, I've awoken
+            <h2 id="title" class="font-sans-serif text-secondary fade-in">Bright Grace</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">Growing older, I've awoken
     to hot terrors all around,
 and the bright grace
 I knew when younger
@@ -104,7 +114,7 @@ if I come again
 </pre>
         </main>
     </div>
-    <div id="top-link-container">
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
         <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
     </div>
 </body>

@@ -6,6 +6,10 @@
     <title>Poems of Earth | Wet Earth (Go Forward)</title>
     <link href="../common.css" rel="stylesheet">
     <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
         #home-link {
             margin-top: 0.5rem;
         }
@@ -49,16 +53,22 @@
             width: 2.5rem;
             opacity: 0.1;
         }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="reading">
         <div id="home-link">
-            <a class="text-subtle" href="../home.html#content-anchor">Home</a>
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
         </div>
         <main>
-            <h2 id="title" class="font-sans-serif text-secondary">Wet Earth (Go Forward)</h1>
-            <pre id="content">Damp feet on wet earth,
+            <h2 id="title" class="font-sans-serif text-secondary fade-in">Wet Earth (Go Forward)</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">Damp feet on wet earth,
 as the wind soaks the trees;
 the moonlight's been a stranger
 since you've gotten off your knees.
@@ -80,7 +90,7 @@ the good weight of a purified soul.
 </pre>
         </main>
     </div>
-    <div id="top-link-container">
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
         <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
     </div>
 </body>
