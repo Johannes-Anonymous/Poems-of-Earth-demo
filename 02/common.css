@@ -1,0 +1,157 @@
+/* #region colors */
+:root {
+    --color-background: #2E3440;
+    --color-background-accent: #3B4252;
+
+    --color-accent: #9CB0D9;
+    --color-accent-subtle: #3B568C;
+
+    --color-text-primary: #D8DEE9;
+    --color-text-secondary: #95B3EC;
+    /* --color-text-subtle: #717782; */
+    --color-text-subtle: #A8ADB5;
+}
+/* #endregion */
+
+/* #region fonts */
+@font-face {
+    font-family: "serif";
+    src: url(josefin-slab-regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "sans serif";
+    src: url(josefin-sans-medium.ttf) format("truetype")
+}
+/* #endregion */
+
+/* #region reset and universal defaults */
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+pre {
+    all: revert;
+    margin: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+/* #endregion */
+
+/* #region static styling */
+body {
+    background-color: var(--color-background);
+
+    font-family: "serif";
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.bg-background-accent {
+    background-color: var(--color-background-accent);
+}
+
+.border-accent {
+    border-color: var(--color-accent);
+}
+
+.border-accent-subtle {
+    border-color: var(--color-accent-subtle);
+}
+
+.border-primary {
+    border-color: var(--color-text-primary);
+}
+
+.border-background-accent {
+    border-color: var(--color-background-accent);
+}
+
+.font-sans-serif {
+    font-family: "sans serif";
+}
+
+.font-serif {
+    font-family: "serif";
+}
+
+.reading {
+    padding: 0.5rem 1rem;
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-subtle {
+    color: var(--color-text-subtle);
+}
+
+.underline {
+    text-decoration: underline;
+}
+/* #endregion */
+
+/* #region responsive styling */
+@media (min-width: 540px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .reading {
+        padding: 1rem 2.3rem;
+    }
+}
+/* #endregion */
+
+/* #region animations */
+.fade-in {
+    opacity: 0;
+
+    animation-name: fade-in;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* #endregion */

@@ -1,9 +1,13 @@
 /* #region colors */
 :root {
     --color-background: #333;
+    --color-background-accent: #2D2D2D;
+
+    --color-accent: #D9C66A;
+    --color-accent-subtle: #878268;
+
     --color-text-primary: #DDD;
     --color-text-secondary: #ADB58F;
-    --color-text-accent: #D9C66A;
     --color-text-subtle: #999;
 }
 /* #endregion */
@@ -64,6 +68,14 @@ h2 {
     margin-bottom: 0.75rem;
 }
 
+.bg-background-accent {
+    background-color: var(--color-background-accent);
+}
+
+.border-subtle {
+    border-color: var(--color-accent-subtle);
+}
+
 .font-sans-serif {
     font-family: "sans serif";
 }
@@ -77,7 +89,7 @@ h2 {
 }
 
 .text-accent {
-    color: var(--color-text-accent);
+    color: var(--color-accent);
 }
 
 .text-secondary {
