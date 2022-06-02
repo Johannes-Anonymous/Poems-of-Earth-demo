@@ -1,13 +1,13 @@
 /* #region colors */
 :root {
-    --color-background: #32353a;
-    --color-background-accent: #878268;
-    --color-background-secondary: #2B2E34;
+    --color-background: #382E2B;
+    --color-background-accent: #6D6653;
+    --color-background-secondary: #3F302E;
 
     --color-accent: #9CB0D9;
 
     --color-text-primary: #D2D1C6;
-    --color-text-secondary: #BAB997;
+    --color-text-secondary: #CCB988;
     --color-text-subtle: #9E9E94;
 }
 /* #endregion */
