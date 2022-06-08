@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poems of Earth | Bright Grace</title>
+    <link href="../common.css" rel="stylesheet">
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        #title {
+            width: -moz-fit-content;
+            width: fit-content;
+            font-variant: small-caps;
+        }
+
+        #home-link {
+            margin-top: 0.5rem;
+        }
+
+        #home-link, #content {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #content {
+            font-family: inherit;
+            width: fit-content;
+            padding-right: 1rem;
+            /*
+            This relates to the `#top-link-container { margin-top }` property and ensures that some
+            of the poem remains visible when the user scrolls to the bottom of the page.
+            */
+            margin-bottom: -10rem;
+        }
+
+        #top-link-container {
+            /* For Safari 12.1 and earlier */
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            margin-top: 110vh;
+        }
+
+        #top-link-container a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        #top-link-container img {
+            width: 2.5rem;
+            opacity: 0.1;
+        }
+
+        @media (min-width: 540px) {
+            #home-link, #content {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading">
+        <div id="home-link">
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
+        </div>
+        <main>
+            <h2 id="title" class="font-sans-serif text-secondary-strong fade-in">Bright Grace</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">Growing older, I've awoken
+    to hot terrors all around,
+and the bright grace
+I knew when younger
+    is less easily found.
+
+I've learned:
+the realm of my heart
+    is treacherous ground;
+it has become a battlefield
+    of aches,
+    sunken bullets,
+    and bones,
+covered with half-light dust,
+    the decay of my soul.
+
+I've learned:
+every idol dies,
+    and we cling
+    to their bleach-white bones.
+
+
+
+So now,
+    woman,
+I pant with tortured lung,
+feeling wounds I've borne long
+    and no longer want;
+I begin to rest starving eyes
+and turn my toes back to you,
+    to ask:
+
+If I peel away my dying shirt
+    and the sweat stays
+    like stubborn waste;
+if I am speckled brown
+    with muddy earth,
+    with soil stamped in my face;
+if I come again
+    (but cold and broken-limbed,)
+    will you still remember
+        and care
+    to bear my name?
+</pre>
+        </main>
+    </div>
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
+        <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poems of Earth | Great Dove</title>
+    <link href="../common.css" rel="stylesheet">
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        #title {
+            width: -moz-fit-content;
+            width: fit-content;
+            font-variant: small-caps;
+        }
+
+        #home-link {
+            margin-top: 0.5rem;
+        }
+
+        #home-link, #content {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #content {
+            font-family: inherit;
+            width: fit-content;
+            padding-right: 1rem;
+            /*
+            This relates to the `#top-link-container { margin-top }` property and ensures that some
+            of the poem remains visible when the user scrolls to the bottom of the page.
+            */
+            margin-bottom: -10rem;
+        }
+
+        #top-link-container {
+            /* For Safari 12.1 and earlier */
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            margin-top: 110vh;
+        }
+
+        #top-link-container a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        #top-link-container img {
+            width: 2.5rem;
+            opacity: 0.1;
+        }
+
+        @media (min-width: 540px) {
+            #home-link, #content {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading">
+        <div id="home-link">
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
+        </div>
+        <main>
+            <h2 id="title" class="font-sans-serif text-secondary-strong fade-in">Great Dove</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">I remember Saturdays
+    before you,
+    good and filled,
+        but not fecund like this.
+
+This evening glows with life,
+    and your deep rose-heart blossoms
+    under the falling sun.
+
+Our chests are crossed with charcoal,
+        remnants from last night's fire,
+    and memories of taste and sweat
+    stay with and guide me.
+
+I suffer you slowly, joyfully,
+    dancing with your heart (I'm barely tethered);
+        we will, soon enough,
+        rest, one and content.
+
+I watch as you lay,
+        back to ground,
+        with heart clamoring for home,
+    and I catch echoes of ancestors
+    through my quivering bones;
+from the rumble of soil —
+    Nature's dream, growling from Earth
+— to the surface of our skin,
+the Great Dove's grace impels us to newness,
+    and He warmly thrusts His way
+    into our small home.
+</pre>
+        </main>
+    </div>
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
+        <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
+    </div>
+</body>
+</html>

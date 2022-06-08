@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poems of Earth | Rise (I Hope We Dance)</title>
+    <link href="../common.css" rel="stylesheet">
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        #title {
+            width: -moz-fit-content;
+            width: fit-content;
+            font-variant: small-caps;
+        }
+
+        #home-link {
+            margin-top: 0.5rem;
+        }
+
+        #home-link, #content {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #content {
+            font-family: inherit;
+            width: fit-content;
+            padding-right: 1rem;
+            /*
+            This relates to the `#top-link-container { margin-top }` property and ensures that some
+            of the poem remains visible when the user scrolls to the bottom of the page.
+            */
+            margin-bottom: -10rem;
+        }
+
+        #top-link-container {
+            /* For Safari 12.1 and earlier */
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            margin-top: 110vh;
+        }
+
+        #top-link-container a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        #top-link-container img {
+            width: 2.5rem;
+            opacity: 0.1;
+        }
+
+        @media (min-width: 540px) {
+            #home-link, #content {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading">
+        <div id="home-link">
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
+        </div>
+        <main>
+            <h2 id="title" class="font-sans-serif text-secondary-strong fade-in">Rise (I Hope We Dance)</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">We stepped from hope
+    into dance
+    when we wed.
+I remember how
+    brush and glance
+    turned
+    to taste and touch,
+how our great oak floors
+    turned
+    warm under the quiet morning sun;
+and how we learned
+    to dance together,
+the flesh of our feet
+    wearing the wood,
+    my hands guiding your curves;
+
+We
+    turned
+    about the spirit
+    keeping us
+    and
+    kept between us.
+
+All our steps were new
+    and grounded,
+    planted in trust
+    and surrender.
+We grew
+    together.
+
+Until you
+    turned
+
+    inward
+    and
+    away.
+
+Now,
+    the clocks tick
+    without mercy.
+
+Now, the spirit moans,
+    and my hands are torn open;
+Now my feet are flayed,
+    numb on oak floor rotten;
+Now I taste
+    and caress
+    naught.
+
+    ...
+
+To sweep the desert
+    bare with holy wind
+    until it be free of sand,
+to wander outside your cold house
+    until you walk out again,
+to dance with you on repeat
+    on fields of deep cool grass;
+
+I have fought,
+I have endured,
+and I hope,
+    yet —
+
+Even if your freedom
+    were again uncovered,
+even if you breathed
+    open warm air again,
+even if you heard your heart
+    beat in time with nature's song
+
+— I wonder if you
+    would rise,
+    release yourself,
+and step from stillborn rooms
+    into hot windy light,
+and again
+    join
+    our dance.
+</pre>
+        </main>
+    </div>
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
+        <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
+    </div>
+</body>
+</html>
