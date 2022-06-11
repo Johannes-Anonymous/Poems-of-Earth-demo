@@ -2,27 +2,53 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- TODO: Automate this value (and the other common values) -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Poems of Earth</title>
-    <link href="./common.css" rel="stylesheet">
     <style>
         body {
             position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            top: -1rem;
+            bottom: -1rem;
+            left: -1rem;
+            right: -1rem;
 
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+
+            background-color: #CCC;
+            font-family: 'JetBrains Mono', 'Josefin Slab', monospace;
+            color: #101010;
+            line-height: 2rem;
+            text-align: center;
+        }
+
+        div:first-child {
+            margin-bottom: 1rem;
+        }
+
+        div:last-child {
+            margin-top: 2.5rem;
+        }
+
+        a {
+            background-color: #E9E9E9CC;
+            border: #FFF solid 2px;
+            border-radius: 1rem;
+            padding: 1.75rem;
         }
     </style>
 </head>
 <body>
-    <h1 class="animation-delay-short fade-in">
-        <a class="font-sans-serif text-secondary" href="./home.html">ENTER</a>
-    </h1>
+    <div>
+        The poems have been relocated.
+    </div>
+    <div>
+        Please visit:
+    </div>
+    <div>
+        <a href="https://johannes-anonymous.github.io/Poems-of-Earth/">https://johannes-anonymous.github.io/Poems-of-Earth/</a>
+    </div>
 </body>
 </html>
