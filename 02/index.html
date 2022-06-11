@@ -29,14 +29,21 @@
         }
 
         div:last-child {
+            width: 90%;
             margin-top: 2.5rem;
-        }
+            padding: 1.75rem 0;
 
-        a {
             background-color: #E9E9E9CC;
             border: #FFF solid 2px;
-            border-radius: 1rem;
-            padding: 1.75rem;
+            border-radius: 0.5rem;
+        }
+
+        @media (min-width: 650px) {
+            div:last-child {
+                width: unset;
+                padding: 1.75rem;
+                border-radius: 1rem;
+            }
         }
     </style>
 </head>
