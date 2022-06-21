@@ -6,16 +6,8 @@
     <title>Poems of Earth</title>
     <style>
         body {
-            position: fixed;
-            top: -1rem;
-            bottom: -1rem;
-            left: -1rem;
-            right: -1rem;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
+            padding: 0;
 
             background-color: #CCC;
             font-family: 'JetBrains Mono', 'Josefin Slab', monospace;
@@ -24,13 +16,25 @@
             text-align: center;
         }
 
-        div:first-child {
+        a {
+            color: #0A26EE;
+        }
+
+        #main-content {
+            height: 110vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div ~ div {
             margin-bottom: 1rem;
         }
 
-        div:last-child {
+        #main-redirect {
             width: 90%;
-            margin-top: 2.5rem;
             padding: 1.75rem 0;
 
             background-color: #E9E9E9CC;
@@ -38,8 +42,20 @@
             border-radius: 0.5rem;
         }
 
+        #secondary-content {
+            background-color: #000A;
+            text-align: left;
+
+            margin: 0;
+            padding: 2rem;
+        }
+
+        #secondary-content a {
+            color: #DDD;
+        }
+
         @media (min-width: 650px) {
-            div:last-child {
+            #main-redirect {
                 width: unset;
                 padding: 1.75rem;
                 border-radius: 1rem;
@@ -48,14 +64,21 @@
     </style>
 </head>
 <body>
-    <div>
-        The poems have been relocated.
+    <div id="main-content">
+        <div>
+            The poems have been relocated.
+        </div>
+        <div>
+            Please visit:
+        </div>
+        <div id="main-redirect">
+            <a href="https://www.poemsofearth.com/">https://www.poemsofearth.com/</a>
+        </div>
     </div>
-    <div>
-        Please visit:
-    </div>
-    <div>
-        <a href="https://www.poemsofearth.com/">https://www.poemsofearth.com/</a>
+    <div id="secondary-content">
+        <div>
+            <a href="./height/index.html">test: height</a>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poems of Earth</title>
+    <link href="./common.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #scroll-container {
+            height: 100vh;
+            width: 100vw;
+
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+
+        .scroll-section {
+            height: 100%;
+            scroll-snap-align: start;
+
+            padding-top: 0;
+            padding-bottom: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #enter-link-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #enter-link {
+            text-align: center;
+            width: min-content;
+            padding: 4rem;
+        }
+
+        #overlay-top {
+            background: linear-gradient(#2F333F 40%, #2F333F00);
+            height: min(20vh, 18rem);
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 2rem;
+        }
+
+        #overlay-bottom {
+            background: linear-gradient(#2F333F00, #2F333F 60%);
+            height: min(20vh, 18rem);
+
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 2rem;
+        }
+
+        #spacer {
+            height: 1rem;
+        }
+
+        @media (min-width: 800px) {
+            body {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div inert id="overlay-top">&nbsp;</div>
+    <div inert id="overlay-bottom">&nbsp;</div>
+
+    <div id="scroll-container">
+        <div class="scroll-section reading animation-delay-short fade-in">
+            I have never run out of fuel, though I have come close.
+        </div>
+        <div class="scroll-section reading">
+            There was one night,<br>
+            with the frost working in from the windows' edges,<br>
+            that the needle was nearly resting on the orange peg.
+        </div>
+        <div class="scroll-section reading">
+            I was still miles from home,<br>
+            and I decided to turn off the headlights<br>
+            to drive by the moon's glow.
+        </div>
+        <div class="scroll-section reading">
+            There was only the creak of the frame against the cold,<br>
+            the shuddering of the suspension as the truck crested our Wisconsin hills,<br>
+            and the alternating roar and rumble of asphalt and gravel<br>
+            as I crossed county lines.
+        </div>
+        <div class="scroll-section reading">
+            Somehow, suddenly,<br>
+            it all became a symphony for me,<br>
+            and I stopped watching the fuel gauge.
+        </div>
+        <div class="scroll-section reading">
+            I became warm, comforted by an incoming thought:<br>
+            regardless if I pulled back up to our house,<br>
+            I would, tonight, end up Home<br>
+            — wherever on earth I happened to be.
+        </div>
+        <h1 id="enter-link-container" class="scroll-section">
+            <a id="enter-link" class="font-sans-serif text-secondary" href="./home.html">ENTER</a>
+        </h1>
+    </div>
+
+    <!--
+        This is extends the page beyond the bottom of the browser window,
+        so that mobile browser's status bars may be more easily hidden
+    -->
+    <div id="spacer">&nbsp;</div>
+</body>
+</html>

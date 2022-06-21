@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poems of Earth | Coyote Bones</title>
+    <link href="../common.css" rel="stylesheet">
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        #title {
+            width: -moz-fit-content;
+            width: fit-content;
+            font-variant: small-caps;
+        }
+
+        #home-link {
+            margin-top: 0.5rem;
+        }
+
+        #home-link, #content {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #content {
+            font-family: inherit;
+            width: fit-content;
+            padding-right: 1rem;
+            /*
+            This relates to the `#top-link-container { margin-top }` property and ensures that some
+            of the poem remains visible when the user scrolls to the bottom of the page.
+            */
+            margin-bottom: -10rem;
+        }
+
+        #top-link-container {
+            /* For Safari 12.1 and earlier */
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            margin-top: 110vh;
+        }
+
+        #top-link-container a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        #top-link-container img {
+            width: 2.5rem;
+            opacity: 0.1;
+        }
+
+        @media (min-width: 540px) {
+            #home-link, #content {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading">
+        <div id="home-link">
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
+        </div>
+        <main>
+            <h2 id="title" class="font-sans-serif text-secondary-strong fade-in">Coyote Bones</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">I awake
+    to empty fields,
+    and coyote bones
+    on my doorstep.
+The trees,
+    like the dead,
+    are silent.
+
+My strength
+    weeps out
+    from shattered limbs,
+and my breaths
+    heave
+    in flattened gasps,
+    dusty and yellow.
+
+I count days,
+    and collect poundings
+    against my skull,
+    bright and sharp.
+
+I thirst
+    for dewy consolation,
+but my flesh
+    is a stranger
+    to hope.
+
+
+
+Stars dance
+    across a pale moonscape
+and the trails
+    of our trials
+    thresh through mud and stone,
+taking away
+    the puny and weak idols
+    we blindly
+    and desperately hold.
+</pre>
+        </main>
+    </div>
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
+        <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
+    </div>
+</body>
+</html>

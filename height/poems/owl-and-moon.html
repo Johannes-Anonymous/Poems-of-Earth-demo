@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poems of Earth | Owl And Moon</title>
+    <link href="../common.css" rel="stylesheet">
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        #title {
+            width: -moz-fit-content;
+            width: fit-content;
+            font-variant: small-caps;
+        }
+
+        #home-link {
+            margin-top: 0.5rem;
+        }
+
+        #home-link, #content {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #content {
+            font-family: inherit;
+            width: fit-content;
+            padding-right: 1rem;
+            /*
+            This relates to the `#top-link-container { margin-top }` property and ensures that some
+            of the poem remains visible when the user scrolls to the bottom of the page.
+            */
+            margin-bottom: -10rem;
+        }
+
+        #top-link-container {
+            /* For Safari 12.1 and earlier */
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            margin-top: 110vh;
+        }
+
+        #top-link-container a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        #top-link-container img {
+            width: 2.5rem;
+            opacity: 0.1;
+        }
+
+        @media (min-width: 540px) {
+            #home-link, #content {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            #top-link-container a {
+                right: max(0rem, 50vw - 35rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading">
+        <div id="home-link">
+            <a class="text-subtle animation-long fade-in" href="../home.html#content-anchor">Home</a>
+        </div>
+        <main>
+            <h2 id="title" class="font-sans-serif text-secondary-strong fade-in">Owl And Moon</h1>
+            <pre id="content" class="animation-delay-medium animation-short fade-in">Familiar sun glances
+    across deep summer sky,
+    and rests gently
+    on our golden home.
+Soon we will be bathed,
+    all faces bright,
+    in bonfire's amber glow.
+
+As we soak
+    in the nectar of night
+    and embers dance
+    before our eyes —
+
+Dad,
+    will you share
+    the telling with me,
+    again?
+How the owls and the moon
+    bear witness to
+    and rejoice in
+    another full day lived?
+
+Will you recall for me
+    our holidays
+    traveling over gravel
+    and through sunsets
+    to Mama's parent's farm?
+I was small,
+    and I remember
+    pulling in near midnight,
+    and being greeted
+    with coffee and cards.
+
+I remember mornings
+    as promises fulfilled:
+    Christmas day, thickly white,
+    we were gathered
+    sharing, holding, giving gifts,
+    living
+    side-by-side.
+
+Oh, now older,
+    with aching in my bones,
+I desire
+    to know
+    at depths too great
+    to forget,
+if these memories
+    of good nights and homes
+    will blend edges together,
+    becoming dappled panoramas,
+    living,
+    and solid as stone.
+
+For I have decided:
+    I do not wish to disappear.
+    I want to stay, mixed,
+    living in our hot laughter,
+    quiet joy
+    and somber tears.
+
+I want to be fixed,
+    and have my place be permanent
+    at home:
+to remain attached
+    to the branch above,
+    and swing freely
+    in golden, gentle,
+    setting sun.
+</pre>
+        </main>
+    </div>
+    <div id="top-link-container" class="animation-delay-long animation-short fade-in">
+        <a href="#top"><img src="../chevron-up-solid.svg" alt="Go to top"></a>
+    </div>
+</body>
+</html>
